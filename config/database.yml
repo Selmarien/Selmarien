@@ -5,9 +5,13 @@
 #   gem 'sqlite3'
 development:
   adapter: postgresql
+  encoding: unicode
+  database: postgres
+  pool: 5
+  username: postgres
   host: localhost
-  username: user
-  database: app-dev
+  password: selmarien
+  port: 5432
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -15,11 +19,15 @@ development:
 test:
   adapter: postgresql
   host: localhost
-  username: user
-  database: app-dev
+  pool: 5
+  username: postgres
+  database: postgres
+  password: selmarien
+  port: 5432
 
 production:
   adapter: postgresql
   host: localhost
-  username: user
-  database: app-dev
+  database: postgres
+  username: tbtdrmsqghteyn
+  port: 5432
